@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-black;
+}
+
+.hover-underline {
+  @apply relative inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300;
+}
+
+.hover-underline:hover::after {
+  @apply w-full;
+}
+
