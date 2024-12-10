@@ -1,35 +1,8 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { Heart } from 'lucide-react'
-import { Icons } from "@/components/icons"
+import { Icons } from "@/components/icons";
 
-import { siteConfig } from "@/config/site"
-
-const footerLinks = {
-  company: [
-    { name: "About", href: "#" },
-    { name: "Careers", href: "#" },
-    { name: "Press", href: "#" },
-  ],
-  resources: [
-    { name: "Blog", href: "#" },
-    { name: "Success Stories", href: "#" },
-    { name: "FAQs", href: "#" },
-  ],
-  legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-    { name: "Cookie Policy", href: "#" },
-  ],
-  social: [
-    { name: "Twitter", href: "#" },
-    { name: "Instagram", href: "#" },
-    { name: "Facebook", href: "#" },
-  ],
-}
+import { siteConfig } from "@/config/site";
 
 export function Footer() {
   return (
@@ -64,6 +37,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

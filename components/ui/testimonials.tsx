@@ -1,11 +1,10 @@
 "use client"
 
-import * as React from "react"
-import Image from "next/image"
-import { motion } from "framer-motion"
 import useEmblaCarousel from "embla-carousel-react"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import * as React from "react"
 
-import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "@/components/ui/section"

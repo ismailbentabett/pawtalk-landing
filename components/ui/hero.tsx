@@ -1,12 +1,10 @@
 "use client"
 
-import * as React from "react"
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight } from 'lucide-react'
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 const containerVariants = {
   hidden: { opacity: 0 },
