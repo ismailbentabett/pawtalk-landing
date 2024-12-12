@@ -2,7 +2,6 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
