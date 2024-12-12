@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowRight } from 'lucide-react'
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -14,7 +14,7 @@ const containerVariants = {
       staggerChildren: 0.2,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -25,7 +25,7 @@ const itemVariants = {
       duration: 0.5,
     },
   },
-}
+};
 
 export function Hero() {
   return (
@@ -50,8 +50,8 @@ export function Hero() {
               className="text-xl text-muted-foreground"
             >
               Swipe right on love. PawTalk makes pet adoption as easy as finding
-              your soulmate. Connect with shelters, chat with caregivers, and meet
-              your new best friend.
+              your soulmate. Connect with shelters, chat with caregivers, and
+              meet your new best friend.
             </motion.p>
             <motion.div
               variants={itemVariants}
@@ -74,17 +74,18 @@ export function Hero() {
                     key={i}
                     className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-background"
                   >
-                    <Image
-                      src={`/placeholder.svg?text=${i}`}
+                    <img
+                      src={`https://i.pravatar.cc/300
+`}
                       alt={`User ${i}`}
-                      fill
                       className="object-cover"
                     />
                   </div>
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
-                Join <span className="font-semibold text-foreground">2,000+</span>{" "}
+                Join{" "}
+                <span className="font-semibold text-foreground">2,000+</span>{" "}
                 happy pet parents
               </p>
             </motion.div>
@@ -101,7 +102,7 @@ export function Hero() {
               className="relative z-10"
             >
               <Image
-                src="/placeholder.svg?height=600&width=300"
+                src="/sc1.png"
                 width={300}
                 height={600}
                 alt="PawTalk App Screenshot"
@@ -120,7 +121,7 @@ export function Hero() {
               className="absolute inset-0 z-0"
             >
               <Image
-                src="/placeholder.svg?height=600&width=300"
+                src="/sc1.png"
                 width={300}
                 height={600}
                 alt="PawTalk App Screenshot Background"
@@ -131,6 +132,5 @@ export function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

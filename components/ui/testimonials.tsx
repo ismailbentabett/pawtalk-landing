@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import useEmblaCarousel from "embla-carousel-react"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import * as React from "react"
+import useEmblaCarousel from "embla-carousel-react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import * as React from "react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Section } from "@/components/ui/section"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
 
 const testimonials = [
   {
@@ -16,7 +16,7 @@ const testimonials = [
     author: {
       name: "Sarah Johnson",
       role: "Happy Pet Parent",
-      avatar: "/placeholder.svg",
+      avatar: "https://i.pravatar.cc/300",
     },
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     author: {
       name: "Mike Chen",
       role: "Shelter Manager",
-      avatar: "/placeholder.svg",
+      avatar: "https://i.pravatar.cc/300",
     },
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
     author: {
       name: "Emily Rodriguez",
       role: "Pet Parent",
-      avatar: "/placeholder.svg",
+      avatar: "https://i.pravatar.cc/300",
     },
   },
   {
@@ -43,27 +43,30 @@ const testimonials = [
     author: {
       name: "David Kim",
       role: "First-time Pet Parent",
-      avatar: "/placeholder.svg",
+      avatar: "https://i.pravatar.cc/300",
     },
   },
-]
+];
 
 export function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     loop: true,
-  })
+  });
 
   const scrollPrev = React.useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev()
-  }, [emblaApi])
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
   const scrollNext = React.useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext()
-  }, [emblaApi])
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   return (
-    <Section id="testimonials" className=" mx-auto max-w-7xl sm:px-6 lg:px-8 bg-muted/50">
+    <Section
+      id="testimonials"
+      className=" mx-auto max-w-7xl sm:px-6 lg:px-8 bg-muted/50"
+    >
       <div className="text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -100,10 +103,9 @@ export function Testimonials() {
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
                         <div className="relative h-10 w-10 rounded-full overflow-hidden">
-                          <Image
+                          <img
                             src={testimonial.author.avatar}
                             alt={testimonial.author.name}
-                            fill
                             className="object-cover"
                           />
                         </div>
@@ -144,6 +146,5 @@ export function Testimonials() {
         </div>
       </div>
     </Section>
-  )
+  );
 }
-

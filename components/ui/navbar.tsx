@@ -75,7 +75,9 @@ export function Navbar() {
                 ))}
                 <div className="mt-4 space-y-2">
                   <Button className="w-full" variant="outline" asChild onClick={() => setIsOpen(false)}>
-                    <Link href="/login">Sign In</Link>
+                    <a
+                    target="_blank"
+                    href="https://pawtalk-dashboard.vercel.app/">Sign In</a>
                   </Button>
                   <Button className="w-full" onClick={() => setIsOpen(false)}>
                     <Link href="/download">Download App</Link>
@@ -103,7 +105,10 @@ export function Navbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <Button variant="ghost" asChild>
-            <Link href="/login">Sign In</Link>
+            <a
+              target="_blank"
+              href="https://pawtalk-dashboard.vercel.app/">Sign In</a>
+              
           </Button>
           <Button asChild>
             <Link href="/download">Download App</Link>

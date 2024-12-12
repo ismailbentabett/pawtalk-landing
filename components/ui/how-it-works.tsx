@@ -92,7 +92,7 @@ export function HowItWorks() {
         >
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=300"
+              src="/sc2.png"
               width={300}
               height={600}
               alt="PawTalk App Interface"
